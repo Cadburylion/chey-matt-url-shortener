@@ -5,6 +5,8 @@ import storeCreate from './lib/store-create'
 
 import App from './component/app'
 
+import './style/main.scss'
+
 let AppContainer = () => (
   <Provider store={storeCreate()}>
     <App/>

@@ -7,6 +7,8 @@ import * as modalAction from '../../action/modal.js'
 
 import Modal from '../modal'
 
+import './style.scss'
+
 class Shortener extends React.Component {
   constructor(props){
     super(props)
@@ -32,7 +34,6 @@ class Shortener extends React.Component {
   }
 
   render(){
-    console.log(this.props.url)
     return(
       <div className='form-container'>
         <form onSubmit={this.handleSubmit}>
@@ -43,11 +44,9 @@ class Shortener extends React.Component {
             value={this.state.url}
             onChange={this.handleChange}
           />
-          <button type='submit'> SHORTEN URL </button>
+          <button type='submit btn'> SHORTEN URL </button>
         </form>
-        {util.renderIf(this.props.modal,
-          <Modal />
-        )}
+
       </div>
     )
   }
