@@ -8,7 +8,7 @@ export default class App extends React.Component {
   render(){
     return(
       <main>
-        <h1> Soli Deo Gloria </h1>
+        <h1> SDG </h1>
         <Shortener/>
       </main>
     )
