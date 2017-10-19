@@ -1,0 +1,14 @@
+@import "vars";
+
+.form-container{
+  input{
+    margin: 10px auto;
+    width: calc(100vw - 50%);
+    min-width: 150px;
+    max-width: 600px;
+  }
+  button {
+    margin: 0 auto;
+    width: 150px;
+  }
+}

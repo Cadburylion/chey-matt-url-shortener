@@ -1,0 +1,36 @@
+@import "vars";
+
+.modal-exterior{
+  &:before{
+    content: "";
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 10;
+  }
+  display: flex;
+  // position: fixed;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.modal-interior{
+  height: 200px;
+  width: 360px;
+  background: #fefefe;
+  border: $color-grey;
+  border-radius: 2px;
+  padding: $pad;
+  box-shadow:
+  0 9px 46px 8px rgba(0,0,0,0.14),
+  0 11px 15px -7px rgba(0,0,0,0.12),
+  0 24px 38px 3px rgba(0,0,0,0.2);
+  z-index: 11;
+  .title{
+    text-align: center;
+  }
+  .original-url{
+    text-align: center;
+    line-height: 150px;
+  }
+}
