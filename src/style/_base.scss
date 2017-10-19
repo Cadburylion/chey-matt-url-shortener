@@ -1,7 +1,7 @@
 @import "vars";
 
 // content
-html, body { position: relative; }
+html, body { position: relative; height: 100%; }
 head, script, link  { display: none; }
 p { display: inline-block; }
 span,em,strong { display: inline; }
@@ -23,7 +23,7 @@ main-nav {
 }
 
 a {
-  color: $color-white;
+  color: $color-primary;
 
   &:hover {
     // background: $color-secondary;
@@ -36,7 +36,6 @@ body {
   background: $color-white;
   font-size: 16px;
   width: 100%;
-  min-height: 100vh;
 }
 
 h1 {
