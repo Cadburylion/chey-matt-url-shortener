@@ -6,14 +6,7 @@
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    // background: rgba(0,0,0,.6);
-    // position: fixed;
-    // top: 0; left: 0; right: 0; bottom: 0;
-    // z-index: 10;
   }
-  // display: flex;
-  // position: fixed;
-  // justify-content: center;
   position: fixed;
   top: 0; left: 0;
   height: 100%;
@@ -21,7 +14,6 @@
   text-align: center;
   background: rgba(0,0,0,.6);
   z-index: 10;
-  // align-items: baseline;
 }
 
 .modal{
@@ -34,14 +26,16 @@
   background: #fefefe;
   border: $color-grey;
   border-radius: 2px;
-  padding: $pad;
   box-shadow:
   0 9px 46px 8px rgba(0,0,0,0.14),
   0 11px 15px -7px rgba(0,0,0,0.12),
   0 24px 38px 3px rgba(0,0,0,0.2);
-  // z-index: 11;
   .title{
-    text-align: center;
+    width: 100%;
+    margin-top: -1px;
+    padding: 8px;
+    border-radius: 2px 2px 0 0;
+    background-color: $color-primary;
   }
   .original-url{
     text-align: center;
