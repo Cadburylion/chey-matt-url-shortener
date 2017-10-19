@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-exterior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: hsla(0,0%,0%,0.54);
+  color: #444;
+  opacity: .5;
+  .modal-interior{
+    max-width: 400px;
+    height: 400px;
+    width: calc(100% - 88px);
+    background: #fafafa;
+    border-radius: 2px;
+    box-shadow:
+      0 0px 46px 8px rgba(0,0,0,0.14),
+      0 11px 15px -7px rgba(0,0,0,0.14),
+      0 24px 38px 3px rgba(0,0,0,0.2);
+    .title {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      color: #212121;
+    }
+  }
+}
