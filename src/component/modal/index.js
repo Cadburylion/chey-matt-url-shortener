@@ -18,10 +18,14 @@ class Modal extends React.Component {
 
   render(){
     return(
-      <div className='modal-wrapper' onClick={this.handleClick}>
+      <div className='modal-wrapper'>
         <div className='modal'>
           <div className='title'>
             Successful shortened URL modal
+            <div className='modal-x' onClick={this.handleClick}>
+              <span></span>
+              <span></span>
+            </div>
           </div>
           <div className='original-url'>
             Original URL: {this.props.url}
